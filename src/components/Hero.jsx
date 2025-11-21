@@ -1,4 +1,5 @@
 import { ArrowRight, GraduationCap } from "lucide-react";
+import AnimatedHeroVisual from "./AnimatedHeroVisual";
 
 export default function Hero() {
   return (
@@ -59,15 +60,10 @@ export default function Hero() {
             </ul>
           </div>
 
-          {/* Visual placeholder */}
+          {/* Visual animado */}
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/3] rounded-2xl bg-slate-800/60 border border-white/10 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/15 to-transparent"/>
-              <div className="absolute inset-0 flex items-end p-6">
-                <div className="bg-slate-900/60 backdrop-blur rounded-lg p-4 text-blue-100 text-sm border border-white/10">
-                  Sugerencia de imagen: ejecutivos de universidad en reunión, tablero con embudo y métricas.
-                </div>
-              </div>
+              <AnimatedHeroVisual />
             </div>
             <div className="mt-4 grid grid-cols-3 gap-3 text-center text-blue-200/80 text-xs">
               <div className="bg-slate-800/60 border border-white/10 rounded-lg p-3">Profesional adulto estudiando en línea</div>
